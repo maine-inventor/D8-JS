@@ -1,0 +1,49 @@
+wraparound:
+  label: "Wrap-around"
+  path: layouts/wraparound
+  category: "UNE Layouts"
+  template: wraparound
+  library: une_layouts/wraparound
+  default_region: content
+  icon_map:
+    - [callout, content]
+  class: '\Drupal\une_layouts\Wraparound'
+  regions:
+    callout:
+      label: Callout
+    content:
+      label: Content
+flexible:
+  label: "Flexible"
+  path: layouts/flexible
+  category: "UNE Layouts"
+  template: flexible
+  library: une_layouts/flexible
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+diagonal:
+  label: "Diagonal"
+  path: layouts/diagonal
+  category: "UNE Layouts"
+  template: diagonal
+  library: une_layouts/diagonal
+  default_region: region_1
+  class: '\Drupal\une_layouts\Diagonal'
+  icon_map:
+    - [region_1]
+    - [region_2]
+    - [region_3]
+    - [region_4]
+  regions:
+    region_1:
+      label: Region 1 (light)
+    region_2:
+      label: Region 2 (light)
+    region_3:
+      label: Region 3 (dark)
+    region_4:
+      label: Region 4 (dark)

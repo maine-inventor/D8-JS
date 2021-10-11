@@ -1,0 +1,30 @@
+{% if content %}
+
+  <div class="layout layout--diagonal section__diagonal {{ is_layout_builder }} {{ settings.pullup ? 'pullup' : '' }}">
+
+    {% if content.region_1 %}
+      <div class="layout__region layout__region-1 layout--{{ settings.region_1 }}">
+        {{ content.region_1 }}
+      </div>
+    {% endif %}
+
+    {% if content.region_2 %}
+      <div class="layout__region layout__region-2 layout--{{ settings.region_2 }}">
+        {{ content.region_2 }}
+      </div>
+    {% endif %}
+
+    {% if content.region_3 %}
+      <div class="layout__region layout__region-3 layout--{{ settings.region_3 }}">
+        {{ content.region_3 }}
+      </div>
+    {% endif %}
+
+    {% if content.region_4 %}
+      <div class="layout__region layout__region-4 layout--{{ settings.region_4 }}">
+        {{ content.region_4 }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}

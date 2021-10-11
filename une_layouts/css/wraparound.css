@@ -1,0 +1,43 @@
+@media screen and (min-width: 1025px) {
+  .layout--wraparound {
+    margin-top: 1rem;
+  }
+
+  .layout--wraparound.left .layout__region--callout {
+    float: left;
+    width: 33%;
+    padding: 0 2rem 0 0;
+  }
+
+  .layout--wraparound.right .layout__region--callout {
+    float: right;
+    width: 33%;
+    padding: 0 0 0 2rem;
+  }
+
+  .layout--wraparound .layout__region--content {
+    width: 66%;
+    float: left;
+  }
+
+  .layout--wraparound .layout__region--content .clearfix::after {
+    clear: initial !important;
+  }
+
+  #layout-builder .layout--wraparound .layout__region--callout {
+    float: none;
+  }
+
+  .layout__region--callout *,
+  .layout__region--callout .block-inline-blockimage {
+    margin-top: 0;
+  }
+
+  .layout--wraparound .layout__region--content .block-layout-builder > h2 {
+    margin-top: 0;
+  }
+
+  .layout--wraparound {
+    margin-top: 5rem;
+  }
+}

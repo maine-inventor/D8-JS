@@ -1,0 +1,9 @@
+{% if content %}
+  <div class="layout layout--flexible clearfix {{ settings.extra_classes }}">
+    {% if content.content %}
+      <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.content }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

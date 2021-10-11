@@ -1,0 +1,7 @@
+name: 'UNE Layouts'
+type: module
+description: 'Provides custom layouts for layout builder'
+core: 8.x
+package: 'Custom'
+dependencies:
+ - layout_builder:layout_builder

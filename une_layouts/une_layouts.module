@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Contains une_layouts.module.
+ */
+
+ function une_layouts_preprocess_diagonal(&$variables) {
+    $route = \Drupal::routeMatch()->getRouteName();
+    $is_layout_builder = preg_match('/^layout_builder.*/', $route);
+    if (!$is_layout_builder) {
+        return $variables['is_layout_builder'] = "frontend";
+    }
+ }

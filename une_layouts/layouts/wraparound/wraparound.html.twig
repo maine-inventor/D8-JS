@@ -1,0 +1,17 @@
+{% if content %}
+  <div class="layout layout--wraparound clearfix {{ settings.extra_classes }}">
+
+    {% if content.callout %}
+      <div {{ region_attributes.callout.addClass('layout__region', 'layout__region--callout') }}>
+        {{ content.callout }}
+      </div>
+    {% endif %}
+
+    {% if content.content %}
+      <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.content }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}

@@ -1,0 +1,15 @@
+wraparound:
+  version: VERSION
+  css:
+    theme:
+      css/wraparound.css: {}
+flexible:
+  version: VERSION
+  css:
+    theme:
+      css/flexible.css: {}
+diagonal:
+  version: VERSION
+  css:
+    theme:
+      css/diagonal.css: {}

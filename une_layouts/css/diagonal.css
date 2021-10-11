@@ -1,0 +1,12 @@
+.layout--diagonal {
+}
+.layout--diagonalpull {
+}
+.layout__full {
+  float:left;
+  width:100%;
+}
+.layout__2col {
+  float:left;
+  width:50%;
+} 
